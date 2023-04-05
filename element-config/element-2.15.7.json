@@ -1,0 +1,308 @@
+{
+  "zh-CN": [
+    {
+      "name": "组件",
+      "groups": [
+        {
+          "groupName": "Basic",
+          "list": [
+            {
+              "path": "/layout",
+              "title": "Layout 布局",
+              "main": "el-row",
+              "relative": ["el-col"]
+            },
+            {
+              "path": "/container",
+              "title": "Container 布局容器",
+              "relative": ["el-header","el-aside", "el-main", "el-footer"]
+            },
+            {
+              "path": "/color",
+              "title": "Color 色彩"
+            },
+            {
+              "path": "/typography",
+              "title": "Typography 字体"
+            },
+            {
+              "path": "/border",
+              "title": "Border 边框"
+            },
+            {
+              "path": "/icon",
+              "title": "Icon 图标"
+            },
+            {
+              "path": "/button",
+              "title": "Button 按钮"
+            },
+            {
+              "path": "/link",
+              "title": "Link 文字链接"
+            }
+          ]
+        },
+        {
+          "groupName": "Form",
+          "list": [
+            {
+              "path": "/radio",
+              "title": "Radio 单选框",
+              "relative": ["单选框组 el-radio-group", "按钮样式 el-radio-button"]
+            },
+            {
+              "path": "/checkbox",
+              "title": "Checkbox 多选框",
+              "relative": ["多选框组 el-checkbox-group", "按钮样式 el-checkbox-button"]
+            },
+            {
+              "path": "/input",
+              "title": "Input 输入框",
+              "relative": ["带输入建议 el-autocomplete"]
+            },
+            {
+              "path": "/input-number",
+              "title": "InputNumber 计数器"
+            },
+            {
+              "path": "/select",
+              "title": "Select 选择器",
+              "relative": ["普通选项 el-option","分组 el-option-group"]
+            },
+            {
+              "path": "/cascader",
+              "title": "Cascader 级联选择器"
+            },
+            {
+              "path": "/switch",
+              "title": "Switch 开关"
+            },
+            {
+              "path": "/slider",
+              "title": "Slider 滑块"
+            },
+            {
+              "path": "/time-picker",
+              "title": "TimePicker 时间选择器",
+              "relative": ["el-time-select","el-time-picker"]
+            },
+            {
+              "path": "/date-picker",
+              "title": "DatePicker 日期选择器"
+            },
+            {
+              "path": "/datetime-picker",
+              "title": "DateTimePicker 日期时间选择器",
+              "main": "el-date-picker"
+            },
+            {
+              "path": "/upload",
+              "title": "Upload 上传"
+            },
+            {
+              "path": "/rate",
+              "title": "Rate 评分"
+            },
+            {
+              "path": "/color-picker",
+              "title": "ColorPicker 颜色选择器"
+            },
+            {
+              "path": "/transfer",
+              "title": "Transfer 穿梭框"
+            },
+            {
+              "path": "/form",
+              "title": "Form 表单",
+              "relative": ["el-form-item"]
+            }
+          ]
+        },
+        {
+          "groupName": "Data",
+          "list": [
+            {
+              "path": "/table",
+              "title": "Table 表格"
+            },
+            {
+              "path": "/tag",
+              "title": "Tag 标签"
+            },
+            {
+              "path": "/progress",
+              "title": "Progress 进度条"
+            },
+            {
+              "path": "/tree",
+              "title": "Tree 树形控件"
+            },
+            {
+              "path": "/pagination",
+              "title": "Pagination 分页"
+            },
+            {
+              "path": "/badge",
+              "title": "Badge 标记"
+            },
+            {
+              "path": "/avatar",
+              "title": "Avatar 头像"
+            },
+            {
+              "path": "/skeleton",
+              "title": "Skeleton 骨架屏",
+              "relative": ["自定义样式 el-skeleton-item"]
+            },
+            {
+              "path": "/empty",
+              "title": "Empty 空状态"
+            },
+            {
+              "path": "/descriptions",
+              "title": "Descriptions 描述列表",
+              "relative": ["el-descriptions-item"]
+            },
+            {
+              "path": "/result",
+              "title": "Result 结果"
+            }
+          ]
+        },
+        {
+          "groupName": "Notice",
+          "list": [
+            {
+              "path": "/alert",
+              "title": "Alert 警告"
+            },
+            {
+              "path": "/loading",
+              "title": "Loading 加载",
+              "main": "v-loading",
+              "relative": ["指令", "服务"]
+            },
+            {
+              "path": "/message",
+              "title": "Message 消息提示",
+              "main": "$message",
+              "relative": ["服务"]
+            },
+            {
+              "path": "/message-box",
+              "title": "MessageBox 弹框",
+              "main": "$msgbox",
+              "relative": ["$alert","$confirm","$prompt"]
+            },
+            {
+              "path": "/notification",
+              "title": "Notification 通知",
+              "main": "$notify"
+            }
+          ]
+        },
+        {
+          "groupName": "Navigation",
+          "list": [
+            {
+              "path": "/menu",
+              "title": "NavMenu 导航菜单",
+              "relative": ["el-menu-item","el-submenu","分组 el-menu-item-group"]
+            },
+            {
+              "path": "/tabs",
+              "title": "Tabs 标签页",
+              "relative": ["el-tab-pane"]
+            },
+            {
+              "path": "/breadcrumb",
+              "title": "Breadcrumb 面包屑",
+              "relative": ["el-breadcrumb-item"]
+            },
+            {
+              "path": "/page-header",
+              "title": "PageHeader 页头"
+            },
+            {
+              "path": "/dropdown",
+              "title": "Dropdown 下拉菜单",
+              "main": "el-dropdown-menu",
+              "relative": ["el-dropdown-item"]
+            },
+            {
+              "path": "/steps",
+              "title": "Steps 步骤条",
+              "relative": ["el-step"]
+            }
+          ]
+        },
+        {
+          "groupName": "Others",
+          "list": [
+            {
+              "path": "/dialog",
+              "title": "Dialog 对话框"
+            },
+            {
+              "path": "/tooltip",
+              "title": "Tooltip 文字提示"
+            },
+            {
+              "path": "/popover",
+              "title": "Popover 弹出框"
+            },
+            {
+              "path": "/popconfirm",
+              "title": "Popconfirm 气泡确认框"
+            },
+            {
+              "path": "/card",
+              "title": "Card 卡片"
+            },
+            {
+              "path": "/carousel",
+              "title": "Carousel 走马灯",
+              "relative": ["el-carousel-item"]
+            },
+            {
+              "path": "/collapse",
+              "title": "Collapse 折叠面板",
+              "relative": ["el-collapse-item"]
+            },
+            {
+              "path": "/timeline",
+              "title": "Timeline 时间线",
+              "relative": ["el-timeline-item"]
+            },
+            {
+              "path": "/divider",
+              "title": "Divider 分割线"
+            },
+            {
+              "path": "/calendar",
+              "title": "Calendar 日历"
+            },
+            {
+              "path": "/image",
+              "title": "Image 图片"
+            },
+            {
+              "path": "/backtop",
+              "title": "Backtop 回到顶部"
+            },
+            {
+              "path": "/infiniteScroll",
+              "title": "InfiniteScroll 无限滚动",
+              "main": "v-infinite-scroll指令"
+            },
+            {
+              "path": "/drawer",
+              "title": "Drawer 抽屉"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,491 @@
+{
+  "el-row": {
+    "body": [
+      "<el-row>",
+      "\t<el-col :span=\"24\">$0</el-col>",
+      "</el-row>"
+    ]
+  },
+  "el-container": {
+    "body": [
+      "<el-container>",
+      "\t<el-header>${1: Header}</el-header>",
+      "\t<el-main>${2: Main}</el-main>",
+      "</el-container>"
+    ]
+  },
+  "el-link": {
+    "body": [
+      "<el-link type=\"primary\">$0</el-link>"
+    ]
+  },
+  "el-button": {
+    "body": [
+      "<el-button ",
+      "\ttype=\"primary\"",
+      "\t@click=\"handleClick\">",
+      "\t$0",
+      "</el-button>"
+    ]
+  },
+  "el-radio-group": {
+    "body": [
+      "<el-radio-group v-model=\"${1:value}\">",
+      "\t<el-radio label=\"${2:label}\">$3</el-radio>",
+      "\t<el-radio label=\"${4:label}\">$0</el-radio>",
+      "</el-radio-group>"
+    ]
+  },
+  "el-radio": {
+    "body": [
+      "<el-radio v-model=\"${1:value}\" label=\"${2:label}\">$0</el-radio>"
+    ]
+  },
+  "el-checkbox-group": {
+    "body": [
+      "<el-checkbox-group v-model=\"${1:checkList}\">",
+      "\t<el-checkbox v-for=\"data of ${2:showList}\"",
+      "\t\t:label=\"data.value\"",
+      "\t\t:key=\"data.value\">",
+      "\t\t{{data.label}}",
+      "\t</el-checkbox>",
+      "</el-checkbox-group>"
+    ]
+  },
+  "el-checkbox": {
+    "body": [
+      "<el-checkbox v-model=\"${1:value}\">$0</el-checkbox>"
+    ]
+  },
+  "el-input": {
+    "body": [
+      "<el-input v-model=\"${1:input}\" placeholder=\"${2:请输入内容}\" clearable></el-input>"
+    ]
+  },
+  "el-input-number": {
+    "body": [
+      "<el-input-number v-model=\"${1:num}\"",
+      "\tcontrols-position=\"right\"",
+      "\t:min=\"1\"",
+      "\t:max=\"100\">",
+      "</el-input-number>"
+    ]
+  },
+  "el-select": {
+    "body": [
+      "<el-select v-model=\"${1:value}\" placeholder=\"${2:请选择}\">",
+      "\t<el-option",
+      "\t\tv-for=\"item in ${3:options}\"",
+      "\t\t:key=\"item.value\"",
+      "\t\t:label=\"item.label\"",
+      "\t\t:value=\"item.value\">",
+      "\t</el-option>",
+      "</el-select>"
+    ]
+  },
+  "el-cascader": {
+    "body": [
+      "<el-cascader v-model=\"${1:value}\"",
+      "\t:options=\"${2:options}\"",
+      "\t@change=\"${3:handleChange}\">",
+      "</el-cascader>"
+    ]
+  },
+  "el-switch": {
+    "body": [
+      "<el-switch v-model=\"${1:value}\"></el-switch>"
+    ]
+  },
+  "el-slider": {
+    "body": [
+      "<el-slider v-model=\"${1:value}\"></el-slider>"
+    ]
+  },
+  "el-time-picker": {
+    "body": [
+      "<el-time-picker v-model=\"${1:value}\" placeholder=\"${2:请选择时间}\"></el-time-picker>"
+    ]
+  },
+  "el-time-select": {
+    "body": [
+      "<el-time-select v-model=\"${1:value}\"",
+      "\tplaceholder=\"${2:请选择时间}\">",
+      "</el-time-select>"
+    ]
+  },
+  "el-date-picker": {
+    "body": [
+      "<el-date-picker v-model=\"${1:value}\"",
+      "\ttype=\"datetime\"",
+      "\tplaceholder=\"${2:请选择日期时间}\">",
+      "</el-date-picker>"
+    ]
+  },
+  "el-upload": {
+    "body": [
+      "<el-upload",
+      "\tdrag",
+      "\taction=\"${1:url}\"",
+      "\tmultiple>",
+      "\t<i class=\"el-icon-upload\"></i>",
+      "\t<div class=\"el-upload__text\">将文件拖到此处，或<em>点击上传</em></div>",
+      "\t<div class=\"el-upload__tip\" slot=\"tip\">只能上传jpg/png文件，且不超过500kb</div>",
+      "</el-upload>"
+    ]
+  },
+  "el-rate": {
+    "body": [
+      "<el-rate v-model=\"${1:rate}\"></el-rate>"
+    ]
+  },
+  "el-color-picker": {
+    "body": [
+      "<el-color-picker",
+      "\tv-model=\"${1:color}\"",
+      "\tshow-alpha",
+      "\t:predefine=\"${2:predefineColors}\">",
+      "</el-color-picker>"
+    ]
+  },
+  "el-transfer": {
+    "body": [
+      "<el-transfer",
+      "\tfilterable",
+      "\t:filter-method=\"${1:filterMethod}\"",
+      "\tfilter-placeholder=\"${2:请输入}\"",
+      "\tv-model=\"${3:value}\"",
+      "\t:data=\"${4:datas}\">",
+      "</el-transfer>"
+    ]
+  },
+  "el-form": {
+    "body": [
+      "<el-form",
+      "\tref=\"form\"",
+      "\t:model=\"form\"",
+      "\tlabel-width=\"${1:80px}\">",
+      "\t<el-form-item label=\"${2:label}\">",
+      "\t\t<el-input v-model=\"form.name\"></el-input>",
+      "\t</el-form-item>",
+      "</el-form>"
+    ]
+  },
+  "el-form-item": {
+    "body": [
+      "<el-form-item label=\"${1:label}\">",
+      "\t$0",
+      "</el-form-item>"
+    ]
+  },
+  "el-table": {
+    "body": [
+      "<el-table",
+      "\t:data=\"tableData\"",
+      "\tborder",
+      "\tstripe>",
+      "\t<el-table-column",
+      "\t\tprop=\"date\"",
+      "\t\tlabel=\"日期\"",
+      "\t\twidth=\"180\">",
+      "\t</el-table-column>",
+      "</el-table>"
+    ]
+  },
+  "el-tag": {
+    "body": [
+      "<el-tag type=\"${1:success}\">$0</el-tag>"
+    ]
+  },
+  "el-progress": {
+    "body": [
+      "<el-progress :percentage=\"${1:percent}\"></el-progress>"
+    ]
+  },
+  "el-tree": {
+    "body": [
+      "<el-tree",
+      "\t:props=\"props\"",
+      "\t:load=\"loadNode\"",
+      "\tnode-key=\"id\"",
+      "\tlazy",
+      "\tshow-checkbox",
+      "\t@check-change=\"handleCheckChange\">",
+      "</el-tree>"
+    ]
+  },
+  "el-pagination": {
+    "body": [
+      "<el-pagination",
+      "\t@size-change=\"${1:handleSizeChange}\"",
+      "\t@current-change=\"${2:handleCurrentChange}\"",
+      "\t:current-page=\"${3:currentPage}\"",
+      "\t:page-sizes=\"[5,10,50,100,300,500]\"",
+      "\t:page-size=\"10\"",
+      "\tlayout=\"total, sizes, prev, pager, next, jumper\"",
+      "\t:total=\"${4:totalNum}\">",
+      "</el-pagination>"
+    ]
+  },
+  "el-badge": {
+    "body": [
+      "<el-badge :value=\"${1:value}\">",
+      "\t<el-button size=\"small\">评论</el-button>",
+      "</el-badge>"
+    ]
+  },
+  "el-avatar": {
+    "body": [
+      "<el-avatar :size=\"${1:size}\" :src=\"${2:url}\"></el-avatar>"
+    ]
+  },
+  "el-skeleton": {
+    "body": [
+      "<el-skeleton :rows=\"${1:6}\" />"
+    ]
+  },
+  "el-empty": {
+    "body": [
+      "<el-empty description=\"暂无数据\"></el-empty>"
+    ]
+  },
+  "el-descriptions": {
+    "body": [
+      "<el-descriptions title=\"${1:标题}\">",
+      "\t<el-descriptions-item v-for=\"data of descList\"",
+      "\t\t:key=\"data.label\"",
+      "\t\t:label=\"data.label\">",
+      "\t\t{{data.desc}}",
+      "\t</el-descriptions-item>",
+      "</el-descriptions>"
+    ]
+  },
+  "el-result": {
+    "body": [
+      "<el-result",
+      "\ticon=\"success\"",
+      "\ttitle=\"成功提示\"",
+      "\tsubTitle=\"请根据提示进行操作\">",
+      "\t<template slot=\"extra\">",
+      "\t\t<el-button",
+      "\t\t\ttype=\"primary\"",
+      "\t\t\tsize=\"medium\">",
+      "\t\t\t返回",
+      "\t\t</el-button>",
+      "\t</template>",
+      "</el-result>"
+    ]
+  },
+  "el-alert": {
+    "body": [
+      "<el-alert",
+      "\ttitle=\"${1:title}\"",
+      "\ttype=\"${2:success}\">",
+      "</el-alert>"
+    ]
+  },
+  "el-menu": {
+    "body": [
+      "<el-menu",
+      "\t:default-active=\"${1:activeIndex}\"",
+      "\tmode=\"horizontal\"",
+      "\t@select=\"${2:handleSelect}\">",
+      "\t<el-menu-item index=\"${3:1}\">${4:菜单}</el-menu-item>",
+      "\t<el-submenu index=\"${5:2}\">",
+      "\t\t<template slot=\"title\">${6:菜单2}</template>",
+      "\t\t<el-menu-item index=\"${7:2-1}\">${8:选项1}</el-menu-item>",
+      "\t</el-submenu>",
+      "</el-menu>"
+    ]
+  },
+  "el-tabs": {
+    "body": [
+      "<el-tabs",
+      "\tv-model=\"${1:activeName}\"",
+      "\t@tab-click=\"${2:handleClick}\">",
+      "\t<el-tab-pane",
+      "\t\tv-for=\"item of tabList\"",
+      "\t\t:key=\"item.value\"",
+      "\t\t:label=\"item.label\"",
+      "\t\t:name=\"item.value\">",
+      "\t\t${3:<component :is=\"item.component\"></component>}",
+      "\t</el-tab-pane>",
+      "</el-tabs>"
+    ]
+  },
+  "el-breadcrumb": {
+    "body": [
+      "<el-breadcrumb separator=\"/\">",
+      "\t<el-breadcrumb-item :to=\"{ path: '/' }\">首页</el-breadcrumb-item>",
+      "\t<el-breadcrumb-item",
+      "\t\tv-for=\"item of breads\"",
+      "\t\t:key=\"item.value\">",
+      "\t\t{{item.label}}",
+      "\t</el-breadcrumb-item>",
+      "</el-breadcrumb>"
+    ]
+  },
+  "el-page-header": {
+    "body": [
+      "<el-page-header @back=\"${1:goBack}\" content=\"${2:详情页面}\"></el-page-header>"
+    ]
+  },
+  "el-dropdown-menu": {
+    "body": [
+      "<el-dropdown @command=\"${1:handleCommand}\">",
+      "\t<span class=\"el-dropdown-link\">",
+      "\t\t更多<i class=\"el-icon-arrow-down el-icon--right\"></i>",
+      "\t</span>",
+      "\t<el-dropdown-menu slot=\"dropdown\">",
+      "\t\t<el-dropdown-item",
+      "\t\t\tv-for=\"item of ${2:menus}\"",
+      "\t\t\t:key=\"item.value\"",
+      "\t\t\t:command=\"item.value\">",
+      "\t\t\t{{item.label}}",
+      "\t\t</el-dropdown-item>",
+      "\t</el-dropdown-menu>",
+      "</el-dropdown>"
+    ]
+  },
+  "el-steps": {
+    "body": [
+      "<el-steps :space=\"${1:200}\"",
+      "\t:active=\"1\"",
+      "\tfinish-status=\"success\">",
+      "\t<el-step",
+      "\t\tv-for=\"item of ${2:steps}\"",
+      "\t\t:key=\"item.value\"",
+      "\t\ttitle=\"item.label\">",
+      "\t</el-step>",
+      "</el-steps>"
+    ]
+  },
+  "el-dialog": {
+    "body": [
+      "<el-dialog",
+      "\ttitle=\"${1:提示}\"",
+      "\t:visible.sync=\"${2:isShow}\"",
+      "\twidth=\"${3:85%}\"",
+      "\t:before-close=\"handleClose\">",
+      "\t<div>$0</div>",
+      "\t<span slot=\"footer\" class=\"dialog-footer\">",
+      "\t\t<el-button @click=\"${2:isShow} = false\">取消</el-button>",
+      "\t\t<el-button type=\"primary\" @click=\"${4:doSubmit}\">确定</el-button>",
+      "\t</span>",
+      "</el-dialog>"
+    ]
+  },
+  "el-tooltip": {
+    "body": [
+      "<el-tooltip content=\"${1:提示}\" placement=\"top\">",
+      "\t<el-button>${2}</el-button>",
+      "</el-tooltip>"
+    ]
+  },
+  "el-popover": {
+    "body": [
+      "<el-popover",
+      "\tplacement=\"top\"",
+      "\twidth=\"160\"",
+      "\tv-model=\"${1:visible}\">",
+      "\t<p>确定删除吗？</p>",
+      "\t<div>",
+      "\t\t<el-button size=\"mini\"",
+      "\t\t\ttype=\"text\"",
+      "\t\t\t@click=\"${1:visible} = false\">",
+      "\t\t\t取消",
+      "\t\t</el-button>",
+      "\t\t<el-button size=\"mini\"",
+      "\t\t\ttype=\"primary\"",
+      "\t\t\t@click=\"${1:visible} = false\">",
+      "\t\t\t确定",
+      "\t\t</el-button>",
+      "\t</div>",
+      "\t<el-button slot=\"reference\">删除</el-button>",
+      "</el-popover>"
+    ]
+  },
+  "el-popconfirm": {
+    "body": [
+      "<el-popconfirm",
+      "\ttitle=\"确定删除吗？\"",
+      "\t@confirm=\"${1:doConfirm}\">",
+      "\t<el-button slot=\"reference\">删除</el-button>",
+      "</el-popconfirm>"
+    ]
+  },
+  "el-card": {
+    "body": [
+      "<el-card>",
+      "\t<div slot=\"header\" class=\"clearfix\">",
+      "\t\t<span>卡片名称</span>",
+      "\t\t<el-button type=\"text\">${2:操作按钮}</el-button>",
+      "\t</div>",
+      "\t<div>$0</div>",
+      "</el-card>"
+    ]
+  },
+  "el-carousel": {
+    "body": [
+      "<el-carousel :interval=\"5000\" arrow=\"always\">",
+      "\t<el-carousel-item",
+      "\t\tv-for=\"(item,idx) of list\"",
+      "\t\t:key=\"idx\">",
+      "\t\t<div>{{ item }}</div>",
+      "\t</el-carousel-item>",
+      "</el-carousel>"
+    ]
+  },
+  "el-collapse": {
+    "body": [
+      "<el-collapse v-model=\"${1:activeNames}\" @change=\"${2:handleChange}\">",
+      "\t<el-collapse-item title=\"$3\" name=\"${4:1}\">",
+      "\t\t<div>$0</div>",
+      "\t</el-collapse-item>",
+      "</el-collapse>"
+    ]
+  },
+  "el-timeline": {
+    "body": [
+      "<el-timeline>",
+      "\t<el-timeline-item",
+      "\t\tv-for=\"(item, index) in ${1:activities}\"",
+      "\t\t:key=\"index\"",
+      "\t\t:timestamp=\"item.timestamp\">",
+      "\t\t{{item.content}}",
+      "\t</el-timeline-item>",
+      "</el-timeline>"
+    ]
+  },
+  "el-divider": {
+    "body": [
+      "<el-divider></el-divider>"
+    ]
+  },
+  "el-calendar": {
+    "body": [
+      "<el-calendar v-model=\"${1:value}\"></el-calendar>"
+    ]
+  },
+  "el-image": {
+    "body": [
+      " <el-image :src=\"${1:url}\" :fit=\"fit\"></el-image>"
+    ]
+  },
+  "el-backtop": {
+    "body": [
+      "<el-backtop target=\"${1:.target}\"></el-backtop>"
+    ]
+  },
+  "el-drawer": {
+    "body": [
+      "<el-drawer",
+      "\tdirection=\"rtl\"",
+      "\t:size=\"300\"",
+      "\ttitle=\"${1:编辑}\"",
+      "\t:visible.sync=\"isShow\"",
+      "\t:before-close=\"${2:handleClose}\">",
+      "\t<div>$0</div>",
+      "</el-drawer>"
+    ]
+  }
+}

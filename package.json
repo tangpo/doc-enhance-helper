@@ -1,0 +1,98 @@
+{
+	"name": "doc-enhance-helper",
+	"displayName": "doc-enhance-helper",
+	"description": "辅助开发过程中便捷的使用elementUI组件库",
+	"version": "0.0.3",
+	"publisher": "panda-web",
+	"engines": {
+		"vscode": "^1.56.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onLanguage:html",
+		"onLanguage:vue",
+		"onLanguage:jade",
+		"onLanguage:pug",
+		"onCommand:doc-enhance-helper.showDocEnhanceHelper",
+		"onCommand:doc-enhance-helper.searchAndOpenDoc"
+	],
+	"main": "./dist/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "doc-enhance-helper.showDocEnhanceHelper",
+				"title": "doc-enhance.showHelper"
+			},
+			{
+				"command": "doc-enhance-helper.searchAndOpenDoc",
+				"title": "doc-enhance.search"
+			}
+		],
+		"configuration": {
+			"type": "object",
+			"title": "enhance element doc Helper Configuration",
+			"properties": {
+				"doc-enhance-helper.view.version": {
+					"type": "string",
+					"default": "2.15.7",
+					"description": "Document version of Element UI",
+					"enum": [
+						"2.11.1",
+						"2.12.0",
+						"2.13.2",
+						"2.14.1",
+						"2.15.7"
+					]
+				}
+			}
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run package",
+		"build": "vsce package -o doc-enhance-helper-$npm_package_version.vsix",
+		"compile": "NODE_ENV=development webpack",
+		"watch": "webpack --watch",
+		"package": "webpack --mode production --devtool hidden-source-map && gulp",
+		"lint": "eslint src --ext ts",
+		"build:webviewJs": "gulp"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.3",
+		"@types/mocha": "^8.0.4",
+		"@types/node": "^12.20.37",
+		"@types/shelljs": "^0.8.9",
+		"@types/vscode": "^1.56.0",
+		"@types/webpack-env": "^1.16.3",
+		"@typescript-eslint/eslint-plugin": "^4.14.1",
+		"@typescript-eslint/parser": "^4.14.1",
+		"eslint": "^7.19.0",
+		"glob": "^7.1.6",
+		"gulp": "^4.0.2",
+		"gulp-concat": "^2.6.1",
+		"gulp-run-command": "0.0.10",
+		"gulp-uglify": "^3.0.2",
+		"mocha": "^8.2.1",
+		"shelljs": "^0.8.4",
+		"ts-loader": "^8.0.14",
+		"typescript": "^4.1.3",
+		"vscode-test": "^1.5.0",
+		"webpack": "^5.19.0",
+		"webpack-cli": "^4.4.0"
+	},
+	"dependencies": {
+		"@vscode/webview-ui-toolkit": "^0.8.4",
+		"download-git-repo": "^3.0.2",
+		"electron": "^16.0.2",
+		"element-helper-json-new": "^2.0.6",
+		"element-ui": "^2.15.6",
+		"fs-extra": "^10.0.0",
+		"git-clone": "^0.2.0",
+		"install": "^0.13.0",
+		"npm": "^8.1.4",
+		"pretty": "^2.0.0",
+		"vue": "^2.6.14",
+		"vue-router": "^3.5.3"
+	}
+}
